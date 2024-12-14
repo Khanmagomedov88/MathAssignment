@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\magom\source\repos\Maths\Maths\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Frame\ForDateBase\AddEquation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\ForDateBase\AddExample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\ForDateBase\AddProblem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\Equations.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\Examples.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\ForDateBase\MainAddTasks.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\Handbook.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\LevelExamples\Advanced.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\LevelExamples\EasyLevel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\LevelExamples\MediumLevel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\Problem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frame\Problems.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ImageViewer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Frame\ForDateBase\AddEquation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frame\ForDateBase\AddExample.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frame\ForDateBase\AddProblem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frame\Equations.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frame\Examples.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frame\ForDateBase\MainAddTasks.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frame\Handbook.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frame\Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frame\LevelExamples\Advanced.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frame\LevelExamples\EasyLevel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frame\Problems.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ImageViewer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,153 @@
+﻿<Window x:Class="Maths.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Icons="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:Maths"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1080" WindowStartupLocation="CenterScreen" WindowStyle="None" 
+        AllowsTransparency="True" Background="Transparent">
+    <Border x:Name="MainBorder" Background="#e6ecf5" CornerRadius="30">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="190"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <!--Левое меню -->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Margin="10 60 0 35" Orientation="Horizontal" HorizontalAlignment="Center">
+
+                </StackPanel>
+
+
+
+                <Border Grid.Row="1" Background="#426dc2" CornerRadius="0 50 0 30">
+                    <DockPanel>
+                        <Border Width="80" Height="80" Padding="3" Background="LightGray" CornerRadius="100"
+                    DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="20 -30 0 0">
+                            <Ellipse>
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="pack://application:,,,/Images/Logo.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Border>
+
+                        
+
+
+                        <!-- Menu Titles-->
+                        <TextBlock Text="Maths" Foreground="White" FontSize="22" FontWeight="SemiBold" 
+                       DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
+                        <TextBlock Text="Moscow, Kulakov Street" Foreground="#bfe0ff" FontSize="14" FontWeight="SemiBold" 
+                       DockPanel.Dock="Top" TextAlignment="Center"/>
+
+                        <!-- Menu Separator-->
+                        <Separator Margin="25" DockPanel.Dock="Top" Height="0.8" Background="#7e5fdc"/>
+
+                        <!-- Menu Buttons-->
+
+                        <StackPanel DockPanel.Dock="Top">
+                            <Button Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Home">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icons:PackIconMaterial Kind="Home" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Главная"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Handbook">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icons:PackIconMaterial Kind="BookOpenVariant" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Справочник"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Examples">
+                                <StackPanel Orientation="Horizontal" >
+                                    <Icons:PackIconMaterial Kind="Calculator" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Решение примеров"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Problems">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icons:PackIconMaterial Kind="NoteText" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Решение задач"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Equations">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icons:PackIconMaterial Kind="FunctionVariant" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Решение уравнений"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button x:Name="Button_Administration" Visibility="Hidden" Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_AddTask">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icons:PackIconMaterial Kind="TuneVariant" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Управление"/>
+                                </StackPanel>
+                            </Button>
+
+                        </StackPanel>
+
+                        <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="10 5 15 20" Cursor="Hand"
+                    Click="Click_Exit">
+                            <StackPanel Orientation="Horizontal">
+                                <Icons:PackIconMaterial Kind="Logout" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Выход"/>
+                            </StackPanel>
+                        </Button>
+
+                    </DockPanel>
+
+                </Border>
+                <TextBlock Text="15:20" x:Name="textTime" VerticalAlignment="Top" Margin="114,10,-14,0" DockPanel.Dock="Top" FontSize="20"
+               FontWeight="SemiBold" Foreground="#bfe0ff" Grid.Row="1" Height="42"/>
+            </Grid>
+            <!-- Main section-->
+            <Grid Grid.Column="1" Margin="30 20 20 20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Button Style="{StaticResource topButton}" Margin="0 0 20 0" Background="#dcdcdc" HorizontalAlignment="Right" Cursor="Hand">
+                    <Icons:PackIconMaterial Kind="Cog"/>
+                </Button>
+
+                <Button Style="{StaticResource topButton}" Margin="0 0 60 0" HorizontalAlignment="Right" Cursor="Hand" Click="Click_Style">
+                    <Image x:Name="Image_Style" Source="pack://application:,,,/Images/Moon.png"/>
+                </Button>
+
+                <!--Page Title-->
+                <TextBlock x:Name="TitleText" Text="Главная страница" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0 20 0 0"
+   HorizontalAlignment="Left" Foreground="#4A4A4A"/>
+
+
+            </Grid>
+
+            <Frame x:Name="Frame_W" Margin="-5,120,0,0" NavigationUIVisibility="Hidden" Grid.Column="1">
+                <Frame.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#e6ecf5" Offset="0.004"/>
+                        <GradientStop Color="#426dc2" Offset="0.939"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+
+            <Separator x:Name="MainSeparator" Margin="-5,110,250,585" DockPanel.Dock="Top" Height="1.5" Background="#FF5A87E0" Grid.Column="1" Opacity="0.3"/>
+        </Grid>
+    </Border>
+</Window>

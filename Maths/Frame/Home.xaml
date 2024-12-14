@@ -1,0 +1,24 @@
+﻿<Page x:Class="Maths.Frame.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Maths.Frame"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Home">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#e6ecf5" Offset="0.004"/>
+                <GradientStop Color="#426dc2" Offset="0.939"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Grid.Column="1" Margin="30 20 20 20">
+            <TextBlock Foreground="#4A4A4A" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" Text="Добро пожаловать в Math Assignments - 7!"  Margin="0,-250,0,0"></TextBlock>
+
+
+        </Grid>
+        <TextBlock FontSize="16" Foreground="#dcdcdc" VerticalAlignment="Top" Text='"Математика — это ключ к пониманию мира" – Галилео Галилей'  Margin="380,550,0,0" ></TextBlock>
+    </Grid>
+</Page>

@@ -1,0 +1,8 @@
+C:\Users\magom\source\repos\Maths\Maths\bin\Release\net8.0-windows\publish\win-x64\Maths.pdb
+C:\Users\magom\source\repos\Maths\Maths\bin\Release\net8.0-windows\publish\win-x64\D3DCompiler_47_cor3.dll
+C:\Users\magom\source\repos\Maths\Maths\bin\Release\net8.0-windows\publish\win-x64\PenImc_cor3.dll
+C:\Users\magom\source\repos\Maths\Maths\bin\Release\net8.0-windows\publish\win-x64\PresentationNative_cor3.dll
+C:\Users\magom\source\repos\Maths\Maths\bin\Release\net8.0-windows\publish\win-x64\vcruntime140_cor3.dll
+C:\Users\magom\source\repos\Maths\Maths\bin\Release\net8.0-windows\publish\win-x64\wpfgfx_cor3.dll
+C:\Users\magom\source\repos\Maths\Maths\bin\Release\net8.0-windows\publish\win-x64\e_sqlite3.dll
+C:\Users\magom\source\repos\Maths\Maths\bin\Release\net8.0-windows\publish\win-x64\Maths.exe
